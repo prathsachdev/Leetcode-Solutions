@@ -12,16 +12,17 @@ class Solution {
         int result = 0;
         int currValue = 0, prevValue = 0;
 
-        for(int i = s.length() - 1; i >= 0; i--) {
+        for (int i = s.length() - 1; i >= 0; --i) {
             currValue = romanMap.get(s.charAt(i));
 
-            if(currValue >= prevValue) {
+            if (currValue >= prevValue) {
                 result += currValue;
             } else {
                 result -= currValue;
             }
             prevValue = currValue;
         }
+        
         return result;
     }
 }

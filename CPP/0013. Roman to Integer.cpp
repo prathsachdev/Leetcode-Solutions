@@ -12,11 +12,11 @@ public:
         romanMap['M'] = 1000;
         
         int result = 0, currValue = 0, prevValue = 0;
-
-        for(int i = s.length() - 1; i >= 0; i--) {
+        
+        for (int i = s.length() - 1; i >= 0; --i) {
             currValue = romanMap[s[i]];
 
-            if(currValue >= prevValue) {
+            if (currValue >= prevValue) {
                 result += currValue;
             } else {
                 result -= currValue;

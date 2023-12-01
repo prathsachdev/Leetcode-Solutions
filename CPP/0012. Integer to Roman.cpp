@@ -7,12 +7,12 @@ public:
         string result;
         int index = 0;
         
-        while(num > 0) {
-            if(num >= values[index]) {
+        while (num > 0) {
+            if (num >= values[index]) {
                 result += romanNumerals[index];
                 num -= values[index];
             } else {
-                index++;
+                ++index;
             }
         }
         

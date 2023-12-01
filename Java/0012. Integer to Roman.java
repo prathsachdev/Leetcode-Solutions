@@ -6,12 +6,12 @@ class Solution {
         StringBuilder result = new StringBuilder();
         int index = 0;
         
-        while(num > 0) {
-            if(num >= values[index]) {
+        while (num > 0) {
+            if (num >= values[index]) {
                 result.append(romanNumerals[index]);
                 num -= values[index];
             } else {
-                index++;
+                ++index;
             }
         }
         
