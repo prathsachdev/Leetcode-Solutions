@@ -14,15 +14,19 @@
  * }
  */
 class Solution {
-    public TreeNode invertTree(TreeNode root) {
+    public void recursiveInorder(TreeNode root, List<Integer> ans) {
         if (root == null) {
-            return null;
+            return;
         }
         
-        TreeNode temp = root.left;
-        root.left = invertTree(root.right);
-        root.right = invertTree(temp);
-        
-        return root;
+        recursiveInorder(root.left, ans);
+        ans.add(root.val);
+        recursiveInorder(root.right, ans);
+    }
+    
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> ans = new ArrayList<>();
+        recursiveInorder(root, ans);
+        return ans;
     }
 }

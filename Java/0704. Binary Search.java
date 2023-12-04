@@ -16,7 +16,7 @@ class Solution {
             return -1;
         }
     }
-
+    
     public int search(int[] nums, int target) {
         int lIndex = 0;
         int rIndex = nums.length - 1;

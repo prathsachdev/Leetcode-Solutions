@@ -3,7 +3,7 @@ class Solution {
         if (x < 0) {
             return false;
         }
-
+        
         int num = x, revNum = 0, lastDigit = 0;
         
         while (num > 0) {

@@ -15,7 +15,7 @@ public:
         
         for (int i = s.length() - 1; i >= 0; --i) {
             currValue = romanMap[s[i]];
-
+            
             if (currValue >= prevValue) {
                 result += currValue;
             } else {

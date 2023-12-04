@@ -3,7 +3,7 @@ class Solution {
         int size = temperatures.length;
         int[] ans = new int[size];
         Stack<Integer> helperStack = new Stack<>();
-
+        
         for (int i = size - 1; i >= 0; --i) {
             // Popping all indices with a lower or equal
             // temperature than the current index

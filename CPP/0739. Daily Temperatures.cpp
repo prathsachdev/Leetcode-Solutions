@@ -17,7 +17,7 @@ public:
             if (!helperStack.empty()) {
                 ans[i] = helperStack.top() - i;
             }
-
+            
             // Inserting current index in the stack
             helperStack.push(i);
         }
