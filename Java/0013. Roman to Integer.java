@@ -8,13 +8,13 @@ class Solution {
         romanMap.put('C', 100);
         romanMap.put('D', 500);
         romanMap.put('M', 1000);
-
+        
         int result = 0;
         int currValue = 0, prevValue = 0;
-
+        
         for (int i = s.length() - 1; i >= 0; --i) {
             currValue = romanMap.get(s.charAt(i));
-
+            
             if (currValue >= prevValue) {
                 result += currValue;
             } else {

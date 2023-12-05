@@ -10,7 +10,7 @@ class Solution {
             if (arr[mid] > searchElement) {
                 return binarySearch(arr, l, mid-1, searchElement);
             }
-
+            
             return binarySearch(arr, mid+1, r, searchElement);
         } else {
             return -1;

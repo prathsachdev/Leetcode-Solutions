@@ -5,9 +5,9 @@ public:
             if (num < 0) {
                 return false;
             }
-
+            
             int num = x, revNum = 0, lastDigit = 0;
-
+            
             while (num > 0) {
                 lastDigit = num % 10;
                 revNum = revNum * 10 + lastDigit;
